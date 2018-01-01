@@ -22,3 +22,15 @@
 .nav-tabs {
     text-align:center;
 }
+
+.padding{
+    padding: 15px;
+}
+
+.home_border{
+    border-style: solid;
+    border-color:lightgrey;
+    border-width: 1px;
+    border-radius: 5px;
+    font-family: Courier New, Courier, monospace;
+}
