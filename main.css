@@ -34,3 +34,8 @@
     border-radius: 5px;
     font-family: Courier New, Courier, monospace;
 }
+
+.collNew{
+    border: none !important;
+    border-width: 0px;
+}

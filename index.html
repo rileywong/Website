@@ -36,9 +36,9 @@
 
         <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="Home">Home</a>
+                <a class="nav-link" data-toggle="tab" href="#home" role="tab" aria-controls="Home">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" data-toggle="tab" href="#projects" role="tab" aria-controls="Projects">Projects</a>
             </li>
             <li class="nav-item">
@@ -48,12 +48,12 @@
         </ul>
 
         <div class="tab-content">
-            <div class="tab-pane active" id="home" role="tabpanel">
+            <div class="tab-pane" id="home" role="tabpanel">
 
                 <div class="container-fluid home_border">
                     <div class="row">
                         <div class="col-sm-4 padding">
-                            <div>
+                            <div class=" container text-center">
                                 <img class="rounded" src="./Images/SBULogo.jpg" alt="SBU Logo">
                             </div>
 
@@ -63,7 +63,7 @@
                             <div class="container">
                                 <p align="justify">
                                     Hi my name is Riley Wong. I am a senior studying Computer Science at Stony Brook University. I like coding, watching shows,
-                                    going to concerts and talking to people.
+                                    going to concerts and learning.
                                 </p>
                             </div>
                         </div>
@@ -72,9 +72,58 @@
 
             </div>
 
-            <div class="tab-pane" id="projects" role="tabpanel">
+            <div class="tab-pane active" id="projects" role="tabpanel">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card" style="width: 18rem;">
+                                <h5 class="card-title text-center">Card title</h5>
+                                <img class="card-img-top text-center" src="..." alt="">
+                                <div class="card-body">
 
+                                    <div class="collapse" id="collapseExample">
+
+                                        <div class="card-body">
+                                            Project Description asdfsdf asdf asdf asdf asdf asdf asdf asdf asdf adsf afds
+                                        </div>
+                                    </div>
+                                    
+                                <div class="container text-center">
+                                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        More Info
+                                    </a>
+
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="tab-pane" id="resume" role="tabpanel">adsf.</div>
 
         </div>
