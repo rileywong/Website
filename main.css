@@ -1,5 +1,5 @@
 .proPicStyle{
-    width: 25%;
+    width: 225px;
     border-radius: 50%;
 }
 
@@ -7,6 +7,7 @@
     font-family: Courier New, Courier, monospace;
     color: whitesmoke;
 }
+
 
 .bg{
     background-color:  rgba(41, 63, 71, 1);
@@ -38,4 +39,17 @@
 .collNew{
     border: none !important;
     border-width: 0px;
+}
+
+.projectPicScale{
+    height:auto;
+    width:auto;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.scaleMedia{
+    height:50px;
+    width:50px;
+    
 }
