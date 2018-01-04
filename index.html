@@ -30,56 +30,181 @@
 
 
 
-    <div class="sidenav">
+    <div class="sidenav ">
+
+        <!-- Title  -->
         <div class="text-center">
             <img src="./Images/PicOfRiley.jpg" class="menuBarPic text-center" alt="FacePic">
 
         </div>
         <p class="nameFont"> Riley Wong</p>
 
-        <ul class="nav flex-column" id="myTab" role="tablist">
+        <!-- Navigation Tabs -->
+        <ul class="nav flex-column " id="myTab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#home" role="tab" aria-controls="Home">Home</a>
+                <a class="nav-link" data-toggle="tab" href="#home" role="tab" aria-controls="Home">About</a>
             </li>
-            <li class="nav-item active">
+            <li class="">
                 <a class="nav-link" data-toggle="tab" href="#projects" role="tab" aria-controls="Projects">Projects</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#resume" role="tab" aria-controls="Resume">Resume</a>
             </li>
+            <li class="nav-item active">
+
+            </li>
         </ul>
 
+        <!-- Media Nav Tabs  -->
         <div class="mediaDiv">
-            <a href="https://www.linkedin.com/in/rileywong13/">
-                <img class="scaleMedia" src="./Images/LinkedInLogo.png">
-                <p>rileywong13</p>
-            </a>
-            <a href="https://github.com/rileywong">
-                <img class="scaleMedia" src="./Images/githubLogo.png">
-                <p>rng</p>
-            </a>
-            <a href="https://www.instagram.com/lil_shoelaces/">
-                <img class="scaleMedia" src="./Images/instagramLogo.png">
-                <p>lil_shoelaces</p>
-            </a>
+            <div class="container ">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <a href="https://www.linkedin.com/in/rileywong13/" class="container">
+                            <img class="scaleMedia " src="./Images/LinkedInLogo.png">
+                            <span class="mediaText ">rileywong13</span>
+                        </a>
+                        <a href="https://github.com/rileywong" class="container">
+                            <img class="scaleMedia" src="./Images/githubLogo.png">
+                            <span class="mediaText">rileywong</span>
+                        </a>
+                        <a href="https://www.instagram.com/lil_shoelaces/" class="container">
+                            <img class="scaleMedia" src="./Images/instagramLogo.png">
+                            <span class="mediaText">lil_shoelaces</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
 
         </div>
     </div>
 
 
     <div class="main">
-        <div class="row bg jumbotron jumbotron-fluid text-center">
-            <div class="col-md-5">
-                <h1 class="titleFont ">Riley Wong</h1>
-                <img src="./Images/PicOfRiley.jpg" class="proPicStyle  " alt="FacePic">
-            </div>
-            <div class="col-md-7 titleFont">
 
-                <p align="left">
-                    Hi! I am a senior studying Computer Science at Stony Brook University and will be graduating May 2018. This is my personal
-                    website where I showcase anything I'm working on. I am interested in coding, learning, going to concerts
-                    and living life. You can find a few of my projects, my resume and everything inbetween. Enjoy!
-                </p>
+
+
+
+
+
+
+        <!-- Different Nav Pages -->
+        <div class="tab-content">
+            <!-- Short Bio -->
+
+
+            <!-- About Me Header -->
+            <div class="tab-pane active" id="home" role="tabpanel">
+                <div class="containerHome textBackground">
+                    <img src="./Images/CoverForAboutMe.jpg" alt="AboutMe" style="width:100%;">
+                    <div class="contentHome text-center">
+                        <h1>About Me</h1>
+
+                    </div>
+                </div>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./Images/SBULogo.jpg" class=" " alt="FacePic">
+                        </div>
+                        <div class="col-md-7">
+
+                            <p class="left">
+                                Hi my is Riley Wong. I am a software developer from the Greater New York City area. I currently go to Stony Brook University where I am pursuing a bachelors degree in Computer Science. I enjoy learning, coding, music and anything creative.  
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="tab-pane" id="projects" role="tabpanel">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <h5 class="card-title text-center">Personal Website</h5>
+                                <img class=" projectPicScale text-center" src="./Images/WebsiteProjectPic.png">
+                                <div class="card-body">
+
+                                    <div class="collapse" id="collapseExample1">
+
+                                        <div class="card-body">
+                                            This is my personal website! I built it using electron but you're probably on the web version. It's built using HTML, CSS
+                                            and JQUERY. You could find more details on my github!
+                                        </div>
+                                    </div>
+
+                                    <div class="container text-center">
+                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            More Info
+                                        </a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <h5 class="card-title text-center">Buffet Plating</h5>
+                                <img class=" projectPicScale text-center" src="./Images/BuffetProject.png">
+                                <div class="card-body">
+
+                                    <div class="collapse" id="collapseExample2">
+
+                                        <div class="card-body">
+                                            I tried to optimize plate placement on tables during a buffet! Hot plates couldnt go next to cold ones and you can combine
+                                            tables to create longer ones. Check out how I found the least number of tables
+                                            required.
+                                        </div>
+                                    </div>
+
+                                    <div class="container text-center">
+                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            More Info
+                                        </a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <h5 class="card-title text-center">Functional Programming</h5>
+                                <img class=" projectPicScale text-center" src="./Images/SMLProject.png">
+                                <div class="card-body">
+
+                                    <div class="collapse" id="collapseExample3">
+
+                                        <div class="card-body">
+                                            Functional Programming uses recursion and pattern matching. I used functional programming to solve the tourism problem.
+                                        </div>
+                                    </div>
+
+                                    <div class="container text-center">
+                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            More Info
+                                        </a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Resume -->
+            <div class="tab-pane text-center" id="resume" role="tabpanel">
+
+                <embed src="RileyWongResumeForWeb.pdf" width="800px" height="1100px" />
 
             </div>
         </div>
@@ -87,126 +212,6 @@
 
 
 
-        <div class="container">
-
-
-
-
-            <div class="tab-content">
-                <div class="tab-pane" id="home" role="tabpanel">
-
-                    <div class="container-fluid home_border">
-                        <div class="row">
-                            <div class="col-sm-4 padding">
-                                <div class=" container text-center">
-                                    <img class="rounded" src="./Images/SBULogo.jpg" alt="SBU Logo">
-                                </div>
-
-                            </div>
-
-                            <div class="col-sm-8 padding">
-                                <div class="container">
-                                    <p align="justify">
-                                        Hi my name is Riley Wong. I am a senior studying Computer Science at Stony Brook University. I like coding, watching shows,
-                                        going to concerts and learning.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="tab-pane active" id="projects" role="tabpanel">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card text-center">
-                                    <h5 class="card-title text-center">Personal Website</h5>
-                                    <img class=" projectPicScale text-center" src="./Images/WebsiteProjectPic.png">
-                                    <div class="card-body">
-
-                                        <div class="collapse" id="collapseExample1">
-
-                                            <div class="card-body">
-                                                This is my personal website! I built it using electron but you're probably on the web version. It's built using HTML, CSS
-                                                and JQUERY. You could find more details on my github!
-                                            </div>
-                                        </div>
-
-                                        <div class="container text-center">
-                                            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                                More Info
-                                            </a>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card text-center">
-                                    <h5 class="card-title text-center">Buffet Plating</h5>
-                                    <img class=" projectPicScale text-center" src="./Images/BuffetProject.png">
-                                    <div class="card-body">
-
-                                        <div class="collapse" id="collapseExample2">
-
-                                            <div class="card-body">
-                                                I tried to optimize plate placement on tables during a buffet! Hot plates couldnt go next to cold ones and you can combine
-                                                tables to create longer ones. Check out how I found the least number of tables
-                                                required.
-                                            </div>
-                                        </div>
-
-                                        <div class="container text-center">
-                                            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                                More Info
-                                            </a>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card text-center">
-                                    <h5 class="card-title text-center">Functional Programming</h5>
-                                    <img class=" projectPicScale text-center" src="./Images/SMLProject.png">
-                                    <div class="card-body">
-
-                                        <div class="collapse" id="collapseExample3">
-
-                                            <div class="card-body">
-                                                Functional Programming uses recursion and pattern matching. I used functional programming to solve the tourism problem.
-                                            </div>
-                                        </div>
-
-                                        <div class="container text-center">
-                                            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                                More Info
-                                            </a>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane text-center" id="resume" role="tabpanel">
-
-                    <embed src="RileyWongResumeForWeb.pdf" width="800px" height="1100px" />
-
-                </div>
-
-            </div>
-
-
-
-        </div>
 
     </div>
 
