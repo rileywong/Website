@@ -10,6 +10,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <script>
+        $(function () {
+            $('#myTab a:last').tab('show');
+        })
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riley Wong</title>
@@ -34,17 +40,19 @@
         <p class="nameFont"> Riley Wong</p>
 
         <!-- Navigation Tabs -->
-        <ul class="nav flex-column ">
-            <li>
-                <a href="#home">About</a>
+        <ul class="nav flex-column " id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#home" role="tab" aria-controls="Home">About</a>
             </li>
-            <li>
-                <a href="#projects">Projects</a>
+            <li class="">
+                <a class="nav-link" data-toggle="tab" href="#projects" role="tab" aria-controls="Projects">Projects</a>
             </li>
-            <li>
-                <a href="#resume">Resume</a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#resume" role="tab" aria-controls="Resume">Resume</a>
             </li>
+            <li class="nav-item active">
 
+            </li>
         </ul>
 
         <!-- Media Nav Tabs  -->
@@ -89,51 +97,31 @@
 
 
             <!-- About Me Header -->
+            <div class="tab-pane active" id="home" role="tabpanel">
+                <div class="containerHome textBackground">
+                    <img src="./Images/CoverForAboutMe.jpg" alt="AboutMe" style="width:100%;">
+                    <div class="contentHome text-center">
+                        <h1>About Me</h1>
 
-            <div class="containerHome textBackground">
-                <img src="./Images/CoverForAboutMe.jpg" alt="AboutMe" style="width:100%;">
-                <div class="contentHome text-center">
-                    <h1 id="home">About Me</h1>
+                    </div>
+                </div>
+                <div class="textBackground">
 
+                    <div class="textBox">
+
+                        <p class=" words">
+                            Hi, my name is Riley Wong. I am a software developer from the Greater New York City area. I currently go to Stony Brook University Class of 2018
+                            where I am pursuing a bachelors degree in Computer Science. I enjoy learning, coding, music and
+                            anything creative.
+                        </p>
+
+
+                    </div>
                 </div>
             </div>
-            <div class="textBackground">
-
-                <div class="textBox">
-
-                    <p class=" words">
-                        Hi, my name is Riley Wong. I am a software developer from the Greater New York City area. I currently go to Stony Brook University
-                        Class of 2018 where I am pursuing a bachelors degree in Computer Science. I enjoy learning, coding,
-                        music and anything creative.
-                    </p>
-
-
-                </div>
-            </div>
-
 
             <!-- Projects -->
-
-            <div class="containerHome textBackground">
-                <img src="./Images/cover_photo.jpeg" alt="Projects" style="width:100%;">
-                <div class="contentHome text-center">
-                    <h1 id="projects">Projects</h1>
-
-                </div>
-            </div>
-            <div class="textBackground">
-
-                <div class="textBox">
-
-                    <p class=" words">
-                        Check out some of my projects! You can find most of them on my github.
-                    </p>
-                    <a href="github.com/rileywong13">github.com/rileywong13</a>
-
-                </div>
-            </div>
-            <div class="container projectsDiv">
-                <!-- First Row Projects -->
+            <div class="tab-pane" id="projects" role="tabpanel">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-4">
@@ -210,92 +198,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Second Row Projects -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card text-center">
-                                <h5 class="card-title text-center">Scope - Medical Imaging</h5>
-                                <img class=" projectPicScale text-center" src="./Images/spine.jpeg">
-                                <div class="card-body">
-
-                                    <div class="collapse" id="SpineColl">
-
-                                        <div class="card-body">
-                                            This project is all about the detecting the curvature of someone's spine. We used OpenCV to capture images and find certain
-                                            markers on a volunteers spine. You could choose any marker and any number of
-                                            points. Using those plotted points, we calculated the linear regression of the
-                                            spine and gave a rough diagnostics of potential scoliosis. We won the most health
-                                            conscious award for this!
-                                        </div>
-                                    </div>
-
-                                    <div class="container text-center">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#SpineColl" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            More Info
-                                        </a>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card text-center">
-                                <h5 class="card-title text-center">Buffet Plating</h5>
-                                <img class=" projectPicScale text-center" src="./Images/BuffetProject.png">
-                                <div class="card-body">
-
-                                    <div class="collapse" id="collapseExample2">
-
-                                        <div class="card-body">
-                                            I tried to optimize plate placement on tables during a buffet! Hot plates couldnt go next to cold ones and you can combine
-                                            tables to create longer ones. Check out how I found the least number of tables
-                                            required.
-                                        </div>
-                                    </div>
-
-                                    <div class="container text-center">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            More Info
-                                        </a>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card text-center">
-                                <h5 class="card-title text-center">Functional Programming</h5>
-                                <img class=" projectPicScale text-center" src="./Images/SMLProject.png">
-                                <div class="card-body">
-
-                                    <div class="collapse" id="collapseExample3">
-
-                                        <div class="card-body">
-                                            Functional Programming uses recursion and pattern matching. I used functional programming to solve the tourism problem.
-                                        </div>
-                                    </div>
-
-                                    <div class="container text-center">
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            More Info
-                                        </a>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-
-
-
             <!-- Resume -->
-            <div class="container text-center" id="resume">
+            <div class="tab-pane text-center" id="resume" role="tabpanel">
 
                 <embed src="RileyWongResumeForWeb.pdf" width="800px" height="1100px" />
 
